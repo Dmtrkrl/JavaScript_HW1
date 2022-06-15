@@ -1,0 +1,27 @@
+
+<!-- 4***:  Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке-->
+
+<html>
+   <head>
+   </head>
+   <body>
+      <script>
+	  let age = +prompt("Сколько Вам лет?");
+	   function func() {
+	if (!age || isNaN(age)) {
+        alert("Not integer value");
+    } else if (age < 18) {
+        alert("You don't have access cause your age is " + age + " It's less then " + 18);
+    } else if (age >= 18 && age < 61) {
+        alert("Welcome !");
+    } else if (age > 61) {
+        alert("Keep calm and look Culture channel");
+    } else {
+        alert("Technical work");
+    }
+
+}
+func(age);
+	  </script>
+   </body>
+</html>
